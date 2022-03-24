@@ -15,5 +15,10 @@ class ViewController: UIViewController {
     }
 
 
+    //function for loading questions and answers to the flashcards
+    func LoadQuestionsAnswers() {
+        
+    }
+    
 }
 
