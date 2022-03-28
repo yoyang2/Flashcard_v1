@@ -25,7 +25,8 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Show questions">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="34"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -49,6 +50,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="nextQAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nlw-qP-f5Y"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ut-fF-VgV">
                                 <rect key="frame" x="10" y="691" width="394" height="50"/>
@@ -59,8 +63,9 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Answer">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="29"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="27"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -84,6 +89,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="showAAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Siy-qj-LBd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -101,6 +109,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Ut-fF-VgV" secondAttribute="trailing" constant="10" id="zYI-dI-zUJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aLabel" destination="1Ut-fF-VgV" id="aBx-3e-Whe"/>
+                        <outlet property="qLabel" destination="zED-iw-dEA" id="1LP-QZ-fu7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
