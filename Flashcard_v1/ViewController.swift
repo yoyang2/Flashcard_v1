@@ -35,11 +35,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextQAction(_ sender: Any) {
-
+        cardIndex += 1   //cardIndex = cardIndex + 1
+        if cardIndex == questions.count {//out of boundary
+            cardIndex = 0
+        }
+        qLabel.text = questions[cardIndex]
+        aLabel.text = "???"
     }
     
     @IBAction func showAAction(_ sender: Any) {
-        
+        aLabel.text = answers[cardIndex]
     }
     
     
